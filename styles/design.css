@@ -1,19 +1,32 @@
 div.title {
    font-size : 28px;
-   font-weight: 600;
+   font-family: 'Sofia Pro Semi Bold';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Sofia Pro Semi Bold'), url('Sofia Pro Semi Bold Az.woff') format('woff');
 }
 
 div.SubTitle {
     font-size: 18px;
-    font-weight: 600;
+    font-family: 'Sofia Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sofia Pro Regular'), url('Sofia Pro Regular Az.woff') format('woff');
 }
 
 a.link {
     font-size: 20px;
-
+    font-family: 'Sofia Pro Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sofia Pro Medium'), url('Sofia Pro Medium Az.woff') format('woff');
 }
 
 div.inputBloc {
     font-size: 18px;
-    
+    font-family: 'Sofia Pro Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sofia Pro Medium'), url('Sofia Pro Medium Az.woff') format('woff');
+
 }
