@@ -1,50 +1,71 @@
 div.title {
    font-size : 28px;
-   font-family: 'Sofia Pro Semi Bold';
-   font-style: normal;
-   font-weight: normal;
-   src: local('Sofia Pro Semi Bold'), url('Sofia Pro Semi Bold Az.woff') format('woff');
+   font-family: var(--font-semi-bold);
+   font-style: var(--font-style);
+   font-weight: var(--font-weight);
+   src: var(--src-semi-bold);
    margin-bottom: var(--espacement-texte);
 }
 
 div.SubTitle {
     font-size: 18px;
-    font-family: 'Sofia Pro Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Sofia Pro Regular'), url('Sofia Pro Regular Az.woff') format('woff');
+    font-family: var(--font-regular);
+    font-style: var(--font-style);
+    font-weight: var(--font-weight);
+    src: var(--src-regular);
     margin-bottom: var(--espacement-texte);
 }
 
 a.link {
     font-size: 20px;
-    font-family: 'Sofia Pro Medium';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Sofia Pro Medium'), url('Sofia Pro Medium Az.woff') format('woff');
+    font-family: var(--font-medium);
+    font-style: var(--font-style);
+    font-weight: var(--font-weight);
+    src: var(--src-medium);
 }
 
 div.inputBloc {
     font-size: 18px;
-    font-family: 'Sofia Pro Medium';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Sofia Pro Medium'), url('Sofia Pro Medium Az.woff') format('woff');
+    font-family: var(--font-medium);
+    font-style: var(--font-style);
+    font-weight: var(--font-weight);
+    src: var(--font-medium);
     margin-bottom: var(--espacement-bloc);
+}
+
+.h2{
+    margin-bottom: var(--espacement-texte);
 }
 
 div.mainBtn {
     font-size: 16px;
-    font-family: 'Sofia Pro Medium';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Sofia Pro Medium'), url('Sofia Pro Medium Az.woff') format('woff');
+    font-family: var(--font-medium);
+    font-style: var(--font-style);
+    font-weight: var(--font-weight);
+    src: var(--src-medium);
 }
 
 element {
     --espacement-texte: 24px;
+    --espacement-bloc: 16px;
 }
 
 element {
-    --espacement-bloc: 16px;
+    --font-style: normal;
+    --font-weight: normal;
+}
+
+element {
+    --font-medium: 'Sofia Pro Medium';
+    --src-medium: local('Sofia Pro Medium'), url('Sofia Pro Medium Az.woff') format('woff');
+}
+
+element {
+    --font-regular: 'Sofia Pro Regular';
+    --src-regular: local('Sofia Pro Regular'), url('Sofia Pro Regular Az.woff') format('woff');
+}
+
+element {
+    --font-semi-bold: 'Sofia Pro Semi Bold';
+    --src-semi-bold: local('Sofia Pro Semi Bold'), url('Sofia Pro Semi Bold Az.woff') format('woff');
 }
