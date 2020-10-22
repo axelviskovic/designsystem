@@ -4,6 +4,7 @@ div.title {
    font-style: normal;
    font-weight: normal;
    src: local('Sofia Pro Semi Bold'), url('Sofia Pro Semi Bold Az.woff') format('woff');
+   margin-bottom: var(--espacement-texte);
 }
 
 div.SubTitle {
@@ -12,6 +13,7 @@ div.SubTitle {
     font-style: normal;
     font-weight: normal;
     src: local('Sofia Pro Regular'), url('Sofia Pro Regular Az.woff') format('woff');
+    margin-bottom: var(--espacement-texte);
 }
 
 a.link {
@@ -28,5 +30,21 @@ div.inputBloc {
     font-style: normal;
     font-weight: normal;
     src: local('Sofia Pro Medium'), url('Sofia Pro Medium Az.woff') format('woff');
+    margin-bottom: var(--espacement-bloc);
+}
 
+div.mainBtn {
+    font-size: 16px;
+    font-family: 'Sofia Pro Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sofia Pro Medium'), url('Sofia Pro Medium Az.woff') format('woff');
+}
+
+element {
+    --espacement-texte: 24px;
+}
+
+element {
+    --espacement-bloc: 16px;
 }
