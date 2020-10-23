@@ -37,9 +37,8 @@ div.inputBloc {
     margin-bottom: var(--espacement-texte);
 }
 
-.inputForm{
-    border : 1px solid;
-    border-color : var(--input-color);
+input{
+    border : 1px solid #004E98;
     width : var(--input-width);
     height : var(--input-height);
 }
@@ -77,12 +76,11 @@ element {
     --src-semi-bold: local('Sofia Pro Semi Bold'), url('Sofia Pro Semi Bold Az.woff') format('woff');
 }
 
-
-element {
+/*element {
    --input-color: #004E98;
    --input-error: #CB2626;
    --input-width: 327px;
    --input-height: 56px;
    --input-border-radius: 6px; 
-}
+}*/
 
