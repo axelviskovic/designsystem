@@ -1,86 +1,163 @@
-div.title {
-   font-size : 28px;
-   font-family: var(--font-semi-bold);
-   font-style: var(--font-style);
-   font-weight: var(--font-weight);
-   src: var(--src-semi-bold);
-   margin-bottom: var(--espacement-texte);
+body{
+    color : var(--font-color);
 }
 
-div.SubTitle {
-    font-size: 18px;
-    font-family: var(--font-regular);
-    font-style: var(--font-style);
-    font-weight: var(--font-weight);
-    src: var(--src-regular);
-    margin-bottom: var(--espacement-texte);
+/*   CENTER   */
+
+.blocContainer{
+    width : 350px;
+    margin : 0 auto;
 }
 
-a.link {
+
+/*   FONTS EDIT   */
+
+h1{
+    font-size: 28px;
+    font-family: var(--font-semi-bold);
+}
+
+h2{
     font-size: 20px;
     font-family: var(--font-medium);
-    font-style: var(--font-style);
-    font-weight: var(--font-weight);
-    src: var(--src-medium);
 }
 
-div.inputBloc {
+h3{
     font-size: 18px;
-    font-family: var(--font-medium);
-    font-style: var(--font-style);
-    font-weight: var(--font-weight);
-    src: var(--font-medium);
-    margin-bottom: var(--espacement-bloc);
+    font-family: var(--font-regular);
 }
 
-.h2{
-    margin-bottom: var(--espacement-texte);
+h4{
+    font-size: 16px;
+    font-family: var(--font-semi-bold);
 }
 
-input{
-    border : 1px solid #004E98;
-    width : var(--input-width);
-    height : var(--input-height);
-}
-
-div.mainBtn {
+h5{
     font-size: 16px;
     font-family: var(--font-medium);
-    font-style: var(--font-style);
-    font-weight: var(--font-weight);
-    src: var(--src-medium);
 }
 
-element {
+h6{
+    font-size: 16px;
+    font-family: var(--font-regular);
+}
+
+a{
+    font-family: var(--font-semi-bold);
+}
+
+a.link{
+    color : var(--link-color);
+}
+
+/*   INPUT   */
+
+
+input.inputForm{
+    border : 1px solid;
+    border-color : var(--input-color);
+    width : var(--input-width);
+    height : var(--input-height);
+    border-radius : var(--input-border-radius);
+    padding-left : 50px;
+}
+
+input::placeholder{
+    font-size: 18px;
+    font-family: var(--font-regular);
+}
+
+.labelForm{
+    color : var(--input-color);
+}
+
+.warningMsg{
+    color : var(--input-error);
+    display : none;
+}
+
+.mainBtn {
+    transition : var(--transition-time);
+   border : 2px solid;
+   border-color: var(--link-color);
+   cursor: pointer;
+   width : 236px;
+   height : 48px;
+   background-color: var(--link-color);
+   border-radius: 8px;
+   margin : 0 auto;
+   display : flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.mainBtn h4{
+    transition : var(--transition-time);
+    color : white;
+}
+
+.mainBtn:hover{
+    transition : var(--transition-time);
+    background-color: white;
+    border : 2px solid;
+    border-color: var(--link-color);
+}
+
+.mainBtn:hover h4{
+    transition : var(--transition-time);
+    color : var(--link-color);
+}
+
+
+
+
+/*   ROOTS   */
+
+/* ESPACEMENT*/
+:root {
     --espacement-texte: 24px;
     --espacement-bloc: 16px;
 }
 
-element {
+:root {
     --font-style: normal;
     --font-weight: normal;
+    --font-color : #3F3D50;
 }
 
-element {
+/* FONT MEDIUM */
+:root {
     --font-medium: 'Sofia Pro Medium';
     --src-medium: local('Sofia Pro Medium'), url('Sofia Pro Medium Az.woff') format('woff');
 }
 
-element {
+/* FONT REGULAR */
+:root {
     --font-regular: 'Sofia Pro Regular';
     --src-regular: local('Sofia Pro Regular'), url('Sofia Pro Regular Az.woff') format('woff');
 }
 
-element {
+/* FONT SEMI-BOLD */
+:root {
     --font-semi-bold: 'Sofia Pro Semi Bold';
     --src-semi-bold: local('Sofia Pro Semi Bold'), url('Sofia Pro Semi Bold Az.woff') format('woff');
 }
 
-/*element {
+/* LINKS */
+:root{
+    --link-color: #DD7230;
+}
+
+/* INPUT */
+:root {
    --input-color: #004E98;
    --input-error: #CB2626;
-   --input-width: 327px;
+   --input-width: 277px;
    --input-height: 56px;
    --input-border-radius: 6px; 
-}*/
+}
 
+/* TRANSITIONS */
+:root{
+    --transition-time: all .4s;
+}
