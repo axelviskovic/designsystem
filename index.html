@@ -12,20 +12,21 @@
       <div class="title"><h1>Sign in</h1></div>
       <div class="subTitle"><h5>Not signed up ? <a class="link">Register</a></h5></div>
       <div class="inputBloc">
+        <p class="floatingImg">✉️</p>
         <h2><label class="labelForm">Email</label></h2>
-        <input type="text" class="inputForm" name="email" placeholder="andy@gmail.com✉️">
+        <input type="text" class="inputForm" name="email" placeholder="andy@gmail.com">
         <div class="warningMsg"><h4>⚠️ Warning Message</h4></div>
       </div>
       <div class="inputBloc">
+        <p class="floatingImg">🔒</p>
         <h2><label class="labelForm">Password</label></h2>
-        <input type="text" class="inputForm" name="password" placeholder="•••••••••🔒">
+        <input type="text" class="inputForm" name="password" placeholder="•••••••••">
         <div class="warningMsg"><h4>⚠️ Warning Message</h4></div>
       </div>
       <a class="link"><h4>Forget password</h4></a>
-      <div class="mainBtn" onclick="CheckPassword(document.password)"><h4>Sign in</h4></div>
+      <button class="mainBtn" value='submit' onclick="CheckPassword(document.password)"><h4>Sign in</h4></button>
     </div>
 
-    <script src="scripts/main.js"></script>
-    <script src="mdp_verif.js"></script>
+    <script src="scripts/mdp_verif.js"></script>
   </body>
 </html>

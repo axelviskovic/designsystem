@@ -1,6 +1,6 @@
 function CheckPassword(inputtxt) 
 { 
-let passw= 'andy'
+let passw= "andy";
 if(inputtxt.value.match(passw)) 
 { 
 alert('Correct, try another...')
@@ -12,5 +12,3 @@ alert('Wrong...!')
 return false;
 }
 }
-
-
