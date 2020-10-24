@@ -1,16 +1,18 @@
-function CheckPassword(inputtxt) 
+function CheckPassword() 
 { 
-let passw= 'andy'
-if(inputtxt.value.match(passw)) 
-{ 
-alert('Correct, try another...')
-return true;
-}
+    var passw= "andy";
+    var inputPsd = document.getElementById("password");
+      
+    if(inputPsd.value.match(passw)) 
+    { 
+        alert('Mot de passe correct')
+        return true;
+    }
 else
-{ 
-alert('Wrong...!')
-return false;
-}
+    { 
+    alert('Mot de passe incorrect')
+    return false;
+    }
 }
 
 
