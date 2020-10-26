@@ -1,4 +1,4 @@
-function CheckPassword() 
+function CheckPassword()
 { 
     var passw= "andy";
     var inputPsd = document.getElementById("password");
