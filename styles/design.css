@@ -69,6 +69,7 @@ input.inputForm{
     height : var(--input-height);
     border-radius : var(--input-border-radius);
     padding-left : 50px;
+    color : var(--font-color);
 }
 
 input::placeholder{
@@ -123,6 +124,14 @@ input::placeholder{
     color : var(--link-color);
 }
 
+.mainBtn:focus{
+    color : var(--link-clicked);
+}
+
+input:focus {
+    border-width: 2px;
+}
+
 
 
 
@@ -161,6 +170,7 @@ input::placeholder{
 /* LINKS */
 :root{
     --link-color: #DD7230;
+    --link-clicked: #E48E59;
 }
 
 /* INPUT */
@@ -170,6 +180,7 @@ input::placeholder{
    --input-width: 277px;
    --input-height: 56px;
    --input-border-radius: 6px; 
+   --font-color : #3F3D50;
 }
 
 /* TRANSITIONS */

@@ -1,14 +1,16 @@
-function CheckPassword(inputtxt) 
+function CheckPassword()
 { 
-let passw= "andy";
-if(inputtxt.value.match(passw)) 
-{ 
-alert('Correct, try another...')
-return true;
-}
+    var passw= "andy";
+    var inputPsd = document.getElementById("password");
+    var x = document.getElementById("warningMsgMDP");
+      
+    if(inputPsd.value.match(passw)) 
+    { 
+        return true;
+    }
 else
-{ 
-alert('Wrong...!')
-return false;
-}
+    { 
+        x.style.display = "inline";
+        return false;
+    }
 }

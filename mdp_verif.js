@@ -1,7 +1,7 @@
 function CheckPassword()
 { 
     var passw= "andy";
-    var inputPsd = document.getElementById("password");
+    var inputPsd = andy /*document.getElementById("password")*/;
       
     if(inputPsd.value.match(passw)) 
     { 
@@ -14,5 +14,3 @@ else
     return false;
     }
 }
-
-

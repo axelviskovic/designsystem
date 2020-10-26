@@ -14,19 +14,19 @@
       <div class="inputBloc">
         <p class="floatingImg">✉️</p>
         <h2><label class="labelForm">Email</label></h2>
-        <input type="text" class="inputForm" name="email" id="email" placeholder="andy@gmail.com✉️">
-        <div class="warningMsg"><h4>⚠️ Warning Message</h4></div>
+        <input type="text" class="inputForm" name="email" id="mail" placeholder="andy@gmail.com✉️">
+        <div class="warningMsg" id="warningMsgMail"><h4>⚠️ Warning Message</h4></div>
       </div>
       <div class="inputBloc">
         <p class="floatingImg">🔒</p>
         <h2><label class="labelForm">Password</label></h2>
         <input type="password" class="inputForm" name="password" id="password" placeholder="•••••••••🔒">
-        <div class="warningMsg"><h4>⚠️ Warning Message</h4></div>
+        <div class="warningMsg" id="warningMsgMDP"><h4>⚠️ Warning Message</h4></div>
       </div>
       <a class="link"><h4>Forget password</h4></a>
-      <div class="mainBtn" onclick="CheckPassword()"><h4>Sign in</h4></div>
+      <div class="mainBtn" onclick="showWarningMDP(); showWarningMail();"><h4>Sign in</h4></div>
     </div>
 
-    <script src="scripts/mdp_verif.js"></script>
+    <script src="scripts/mdp_modif_css.js"></script>
   </body>
 </html>
