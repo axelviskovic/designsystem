@@ -46,6 +46,7 @@ a{
     transition : var(--transition-time);
     font-family: var(--font-semi-bold);
     cursor: pointer;
+    text-decoration: none;
 }
 
 a.link:hover{
@@ -79,7 +80,7 @@ input::placeholder{
 
 .floatingImg{
     position: absolute;
-    top : 42%;
+    top : 30%;
     left : 5%;
 }
 
@@ -89,10 +90,10 @@ input::placeholder{
 
 .warningMsg{
     color : var(--input-error);
-    display : none;
+    visibility : hidden;
 }
 
-.mainBtn {
+.mainBtn{
     transition : var(--transition-time);
    border : 2px solid;
    border-color: var(--link-color);
@@ -134,8 +135,9 @@ input:focus {
 
 
 
-
 /*   ROOTS   */
+
+
 
 /* ESPACEMENT*/
 :root {

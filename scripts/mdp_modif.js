@@ -6,11 +6,11 @@ function showWarningMDP()
 
   if(inputPsd.value.match(passw)) 
   { 
-    x.style.visibility = "hidden";
+    x.style.display = "none";
     return true;
   }
     else {
-      x.style.visibility = "visible";
+      x.style.display = "inline";
       /*document.getElementsByTagName("input").style.borderColor = "red";*/
       return false;
     }
@@ -25,10 +25,10 @@ function showWarningMail()
 
   if(inputMail.value.match(mail))
   { 
-    x.style.visibility = "hidden";
+    x.style.display = "none";
     return true;
   }
     else {
-      x.style.visibility = "visible";
+      x.style.display = "inline";
     }
 }

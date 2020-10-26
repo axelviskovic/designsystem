@@ -2,15 +2,15 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8"/>
-    <title>Design system</title>
+    <title>Sign up</title>
     <meta name="description" content="description de la page"/>
     <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
     <link rel="stylesheet" href="styles/design.css">
   </head>
   <body>
     <div class="blocContainer">
-      <div class="title"><h1>Sign in</h1></div>
-      <div class="subTitle"><h5>Not signed up ? <a href="signup.html" class="link">Register</a></h5></div>
+      <div class="title"><h1>Sign up</h1></div>
+      <div class="subTitle"><h5>Already have an account ? <a href="index.html" class="link">Sign in</a></h5></div>
       <div class="inputBloc">
         <p class="floatingImg">✉️</p>
         <h2><label class="labelForm">Email</label></h2>
@@ -23,10 +23,8 @@
         <input type="password" class="inputForm" name="password" id="password" placeholder="•••••••••🔒">
         <div class="warningMsg" id="warningMsgMDP"><h4>⚠️ Your password is incorrect</h4></div>
       </div>
-      <a class="link"><h4>Forget password</h4></a>
       <div class="mainBtn" onclick="showWarningMDP(); showWarningMail();"><h4>Sign in</h4></div>
     </div>
-
     <script src="scripts/mdp_modif_css.js"></script>
   </body>
 </html>
